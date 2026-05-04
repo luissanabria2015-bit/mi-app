@@ -1,9 +1,129 @@
-<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f2027;color:white;">
-  <h2>Cargando sistema...</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Consulta Padrón</title>
 
-  <script>
-    setTimeout(() => {
-      window.location.href = "https://plra.org.py/public/buscar_enrcp.php";
-    }, 1500);
-  </script>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0057d9">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(rgba(0, 20, 60, 0.75), rgba(0, 20, 60, 0.85)),
+                  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
+      background-position: center;
+      color: white;
+    }
+
+    .app {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      padding: 18px;
+      text-align: center;
+      background: rgba(0, 87, 217, 0.9);
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 25px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(10px);
+      border-radius: 22px;
+      padding: 28px;
+      text-align: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+    }
+
+    h1 {
+      margin-top: 0;
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      opacity: 0.95;
+    }
+
+    .boton {
+      display: block;
+      width: 100%;
+      margin-top: 18px;
+      padding: 16px;
+      background: #0057d9;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+    }
+
+    .boton.secundario {
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+    }
+
+    footer {
+      text-align: center;
+      padding: 12px;
+      font-size: 13px;
+      background: rgba(0,0,0,0.35);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="app">
+    <header>
+      Sistema de Consulta
+    </header>
+
+    <main>
+      <div class="card">
+        <h1>Consulta del Padrón</h1>
+
+        <p>
+          Accedé rápidamente al sistema oficial para buscar por cédula,
+          nombre o apellido.
+        </p>
+
+        <a class="boton" href="https://plra.org.py/public/buscar_enrcp.php">
+          Ingresar al padrón
+        </a>
+
+        <a class="boton secundario" href="https://luissanabria2015-bit.github.io/mi-app/">
+          Volver al inicio
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      App creada para acceso rápido
+    </footer>
+  </div>
 </body>
+</html>
