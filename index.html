@@ -1,45 +1,9 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi App</title>
+<body style="display:flex;justify-content:center;align-items:center;height:100vh;background:#0f2027;color:white;">
+  <h2>Cargando sistema...</h2>
 
-  <!-- PWA -->
-  <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#007bff">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    }
-
-    .header {
-      color: white;
-      text-align: center;
-      padding: 10px;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
-    iframe {
-      width: 100%;
-      height: calc(100vh - 50px);
-      border: none;
-    }
-  </style>
-</head>
-
-<body>
-
-  <div class="header">
-    Consulta del Padrón
-  </div>
-
-  <iframe src="https://plra.org.py/public/buscar_enrcp.php"></iframe>
-
+  <script>
+    setTimeout(() => {
+      window.location.href = "https://plra.org.py/public/buscar_enrcp.php";
+    }, 1500);
+  </script>
 </body>
-</html>
