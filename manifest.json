@@ -1,58 +1,21 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <title>Mi App</title>
-
-  <style>
-    body {
-      margin: 0;
-      height: 100vh;
-      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      font-family: Arial, sans-serif;
+{
+  "name": "Consulta Padrón",
+  "short_name": "Padrón",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0057d9",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
     }
-
-    .contenido {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      flex-direction: column;
-      text-align: center;
-    }
-
-    h1 {
-      color: white;
-      margin-bottom: 20px;
-    }
-
-    .boton {
-      background: #007bff;
-      color: white;
-      padding: 12px 25px;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-      transition: 0.3s;
-    }
-
-    .boton:hover {
-      background: #0056b3;
-    }
-  </style>
-</head>
-
-<body>
-  <div class="contenido">
-    <h1>Bienvenido a mi App</h1>
-
-    <a href="https://plra.org.py/public/buscar_enrcp.php" target="_blank" class="boton">
-      Buscar en el padrón
-    </a>
-  </div>
-</body>
-</html>
+  ]
+}
