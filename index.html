@@ -2,128 +2,106 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Consulta Padrón</title>
+  <title>Carlos Chupa Coronel</title>
 
   <link rel="manifest" href="manifest.json">
-  <meta name="theme-color" content="#0057d9">
+  <meta name="theme-color" content="#b30000">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
       margin: 0;
-      min-height: 100vh;
       font-family: Arial, sans-serif;
-      background: linear-gradient(rgba(0, 20, 60, 0.75), rgba(0, 20, 60, 0.85)),
-                  url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
-      background-size: cover;
-      background-position: center;
-      color: white;
-    }
-
-    .app {
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
+      background: linear-gradient(135deg, #b30000, #ffffff);
     }
 
     header {
-      padding: 18px;
+      background: #b30000;
+      color: white;
+      padding: 25px;
       text-align: center;
-      background: rgba(0, 87, 217, 0.9);
-      font-size: 20px;
+      border-bottom: 5px solid white;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    header p {
+      margin: 8px 0 0;
       font-weight: bold;
     }
 
-    main {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 25px;
+    .container {
+      padding: 20px;
+      max-width: 500px;
+      margin: auto;
     }
 
     .card {
-      width: 100%;
-      max-width: 420px;
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(10px);
-      border-radius: 22px;
-      padding: 28px;
+      background: white;
+      border-radius: 20px;
+      padding: 20px;
       text-align: center;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
     }
 
-    h1 {
-      margin-top: 0;
-      font-size: 30px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 1.5;
-      opacity: 0.95;
+    h2 {
+      color: #b30000;
     }
 
     .boton {
       display: block;
-      width: 100%;
-      margin-top: 18px;
-      padding: 16px;
-      background: #0057d9;
+      margin: 10px 0;
+      padding: 15px;
+      background: #b30000;
       color: white;
       text-decoration: none;
-      border-radius: 12px;
-      font-size: 18px;
+      border-radius: 10px;
       font-weight: bold;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.35);
     }
 
-    .boton.secundario {
-      background: rgba(255,255,255,0.18);
-      border: 1px solid rgba(255,255,255,0.35);
+    .boton.sec {
+      background: white;
+      color: #b30000;
+      border: 2px solid #b30000;
     }
 
     footer {
       text-align: center;
-      padding: 12px;
+      padding: 15px;
       font-size: 13px;
-      background: rgba(0,0,0,0.35);
+      color: white;
     }
   </style>
 </head>
 
 <body>
-  <div class="app">
-    <header>
-      Sistema de Consulta
-    </header>
 
-    <main>
-      <div class="card">
-        <h1>Consulta del Padrón</h1>
+<header>
+  <h1>Carlos “Chupa” Coronel</h1>
+  <p>Concejal Municipal 2026</p>
+</header>
 
-        <p>
-          Accedé rápidamente al sistema oficial para buscar por cédula,
-          nombre o apellido.
-        </p>
+<div class="container">
+  <div class="card">
+    <h2>Bienvenidos</h2>
+    <p>Accedé a información, contacto y consulta del padrón.</p>
 
-        <a class="boton" href="https://plra.org.py/public/buscar_enrcp.php">
-          Ingresar al padrón
-        </a>
+    <!-- CONTACTO -->
+    <a class="boton" href="tel:+595981000000">📞 Llamar</a>
 
-        <a class="boton secundario" href="https://luissanabria2015-bit.github.io/mi-app/">
-          Volver al inicio
-        </a>
-      </div>
-    </main>
+    <a class="boton" href="https://wa.me/595981000000" target="_blank">
+      💬 WhatsApp
+    </a>
 
-    <footer>
-      App creada para acceso rápido
-    </footer>
-  </div>
-</body>
-</html>
+    <!-- PADRÓN -->
+    <a class="boton" href="https://www.anr.org.py/pre-padron-2026/" target="_blank">
+      🗳️ Consultar padrón ANR
+    </a>
+
+    <!-- CONTENIDO -->
+    <a class="boton sec" href="lista.html">📋 Lista del candidato</a>
+    <a class="boton sec" href="fotos.html">📸 Fotos</a>
+    <a class="boton sec" href="videos.html">🎥 Videos</a>
