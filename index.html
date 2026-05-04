@@ -3,22 +3,14 @@
 <head>
   <meta charset="UTF-8">
   <title>Mi App</title>
+
   <style>
     body {
-      <a href="https://plra.org.py/public/buscar_enrcp.php" target="_blank" style="
-  background: #007bff;
-  color: white;
-  padding: 12px 25px;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: bold;
-">
-  Buscar en el padrón
-</a>
       margin: 0;
       height: 100vh;
-      background-image: url('https://imgur.com/a/GiDdNDw.jpg'); /* tu imagen */
-      background-size: cover; /* que cubra toda la pantalla */
+      background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+                        url('https://images.unsplash.com/photo-1506744038136-46273834b3fb');
+      background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
       font-family: Arial, sans-serif;
@@ -29,17 +21,38 @@
       justify-content: center;
       align-items: center;
       height: 100%;
-      color: white;
+      flex-direction: column;
       text-align: center;
-      backdrop-filter: brightness(0.8); /* opcional para oscurecer */
+    }
+
+    h1 {
+      color: white;
+      margin-bottom: 20px;
+    }
+
+    .boton {
+      background: #007bff;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .boton:hover {
+      background: #0056b3;
     }
   </style>
 </head>
+
 <body>
+  <div class="contenido">
+    <h1>Bienvenido a mi App</h1>
 
-<div class="contenido">
-  <h1>Bienvenido a mi App</h1>
-</div>
-
+    <a href="https://plra.org.py/public/buscar_enrcp.php" target="_blank" class="boton">
+      Buscar en el padrón
+    </a>
+  </div>
 </body>
 </html>
